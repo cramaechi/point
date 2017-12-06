@@ -41,7 +41,7 @@ Enter the location of point 3: 2 4
 Enter the location of point 4: 1 8                                                                                    
                                                                                                                       
 Enter the location of point 5: 7 3                                                                                    
-                                                                                                                      
+                                                                         
 Enter the number of x/y coordinate shifts for point 1: 2 8                                                            
                                                                                                                       
 Enter the number of x/y coordinate shifts for point 2: 8 5                                                            
