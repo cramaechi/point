@@ -19,48 +19,48 @@ void output(Point p[]);
 
 int main()
 {
-	Point point[NUMBER_OF_POINTS];
+    Point point[NUMBER_OF_POINTS];
 
     input(point);
     output(point);
 
-	return 0;
+    return 0;
 }
 
 void input(Point p[])
 {
     int x, y;
 
-	for (int i = 0; i < NUMBER_OF_POINTS; i++)
-	{
-		cout<<"Enter the location of point "<<i+1<<": ";
-		cin>>x>>y;
-		p[i].sets(x,y);
-		cout<<endl;
-	}
+    for (int i = 0; i < NUMBER_OF_POINTS; i++)
+    {
+        cout<<"Enter the location of point "<<i+1<<": ";
+        cin>>x>>y;
+        p[i].sets(x,y);
+        cout<<endl;
+    }
 
-	for (int i = 0; i < NUMBER_OF_POINTS; i++)
-	{
-		cout<<"Enter the number of x/y coordinate shifts for point "<<i+1<<": ";
-		cin>>x>>y;
-		p[i].movePoint(x,y);
-		cout<<endl;
-	}
+    for (int i = 0; i < NUMBER_OF_POINTS; i++)
+    {
+        cout<<"Enter the number of x/y coordinate shifts for point "<<i+1<<": ";
+        cin>>x>>y;
+        p[i].movePoint(x,y);
+        cout<<endl;
+    }
 }
 
 void output(Point p[])
 {
-	for (int i = 0; i < NUMBER_OF_POINTS; i++)
-	{
-		cout<<"Rotating point "<<i+1<<" by 90 degrees clockwise around the origin.\n";
-		p[i].rotateNinetyDegrees();
-	}
+    for (int i = 0; i < NUMBER_OF_POINTS; i++)
+    {
+        cout<<"Rotating point "<<i+1<<" by 90 degrees clockwise around the origin.\n";
+        p[i].rotateNinetyDegrees();
+    }
 
     cout<<endl;
 
-	for (int i = 0; i < NUMBER_OF_POINTS; i++)
+    for (int i = 0; i < NUMBER_OF_POINTS; i++)
     {
-		cout<<"The current location for point "<<i+1<<" is: (";
+        cout<<"The current location for point "<<i+1<<" is: (";
         cout<<p[i].getX()<<", "<<p[i].getY()<<")\n";
     }
 }

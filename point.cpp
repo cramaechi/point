@@ -9,30 +9,30 @@ Email:  cramaechi@me.com
 
 void Point::sets(int newX, int newY)
 {
-	x = newX;
-	y = newY;
+    x = newX;
+    y = newY;
 }
 
 void Point::movePoint(int xIncrements, int yIncrements)
 {
-	x+=xIncrements;
-	y+=yIncrements;
+    x+=xIncrements;
+    y+=yIncrements;
 }
 
 void Point::rotateNinetyDegrees()
 {
-	int temp;
-	temp = x;
-	x = y;
-	y = -temp;
+    int temp;
+    temp = x;
+    x = y;
+    y = -temp;
 }
 
 int Point::getX()
 {
-	return x;
+    return x;
 }
 
 int Point::getY()
 {
-	return y;
+    return y;
 }
